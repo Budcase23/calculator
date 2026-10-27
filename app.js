@@ -1,5 +1,17 @@
-function showDisplay() {}
+const display = document.getElementById("display");
 
-function clear() {}
+function showDisplay(input) {
+  display.value += input;
+}
 
-function calculate() {}
+function displayClear() {
+  display.value = " ";
+}
+
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "Error";
+  }
+}

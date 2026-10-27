@@ -10,24 +10,23 @@
     <div class="container">
       <input id="display" readonly />
       <div class="buttons">
-        <button class="operator" onclick="showDisplay()">*</button>
-        <button onclick="showDisplay()">7</button>
-        <button onclick="showDisplay()">8</button>
-        <button onclick="showDisplay()">9</button>
-        <button class="operator" onclick="showDisplay()">-</button>
-        <button onclick="showDisplay()">4</button>
-        <button onclick="showDisplay()">5</button>
-        <button onclick="showDisplay()">6</button>
-        <button class="operator" onclick="showDisplay()">-</button>
-        <button onclick="showDisplay()">1</button>
-        <button onclick="showDisplay()">2</button>
-        <button onclick="showDisplay()">3</button>
-        <button class="operator" onclick="showDisplay()">/</button>
-        <button onclick="showDisplay()">.</button>
-        <button onclick="showDisplay()">0</button>
-
-        <button class="operator" onclick="clear()">C</button>
-        <button class="operator" onclick="calculate()">=</button>
+        <button class="operator" onclick="showDisplay('*')">*</button>
+        <button onclick="showDisplay('7')">7</button>
+        <button onclick="showDisplay('8')">8</button>
+        <button onclick="showDisplay('9')">9</button>
+        <button class="operator" onclick="showDisplay('-')">-</button>
+        <button onclick="showDisplay('4')">4</button>
+        <button onclick="showDisplay('5')">5</button>
+        <button onclick="showDisplay('6')">6</button>
+        <button class="operator" onclick="showDisplay('+')">+</button>
+        <button onclick="showDisplay('1')">1</button>
+        <button onclick="showDisplay('2')">2</button>
+        <button onclick="showDisplay('3')">3</button>
+        <button class="operator" onclick="showDisplay('/')">/</button>
+        <button onclick="showDisplay('.')">.</button>
+        <button onclick="showDisplay('0')">0</button>
+        <button class="operator" onclick="displayClear('C')">C</button>
+        <button class="operator" onclick="calculate('=')">=</button>
       </div>
     </div>
     <script src="app.js"></script>
